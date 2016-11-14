@@ -72,7 +72,7 @@ func main() {
 	}
 
 	<-stopChan // wait for SIGINT
-	log.Println(yellow("SWARN"), "Shutting down server...")
+	log.Println(yellow("WARN"), "Shutting down server...")
 
 	// shut down gracefully, but wait no longer than 5 seconds before halting //need go http connection draining added to include
 	//ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
